@@ -1,0 +1,10 @@
+===========================================================================
+
+	Hello and welcome to "Who wants to be a millionaire?"
+	You are currently in the menu, please choose an action:
+	Press (1) to begin the game.
+	Press (2) to add a question.
+	Press (3) to edit a question.
+	Press (0) to exit.
+	
+===========================================================================
