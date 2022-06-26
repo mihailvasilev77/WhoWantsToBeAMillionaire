@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <conio.h>
 
+#include "crypting.h"
+
 void encrypt(char *fname, int key){
     char ch;
     FILE *fps, *fpt;
@@ -72,11 +74,4 @@ void decrypt(char *fname, int key){
 
     fclose(fps);
     fclose(fpt);
-}
-
-int main()
-{
-    //encrypt("c.txt",100);
-    //decrypt("c.txt",100);
-    return 0;
 }
