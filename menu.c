@@ -27,12 +27,21 @@ int main()
         }
         else if(ans == 1){
             //stenli
+            system("cls");
+                //programa
+            system("cls");
         }
         else if(ans == 2){
             //hristo
+            system("cls");
+                //programa
+            system("cls");
         }
         else if(ans == 3){
             //hristo
+            system("cls");
+                //programa
+            system("cls");
         }
     }
     return 0;
