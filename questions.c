@@ -4,6 +4,14 @@
 
 #define size 64
 
+typedef struct {
+    char answer[];
+    char A[];
+    char B[];
+    char C[];
+    char D[];
+    char question;
+}qanda;
 int readQuestion(char *fname, char *question, char *difficulty, char *A, char *B, char *C, char *D, char *answer, int count){
     FILE* fptr = fopen(fname, "r");
     for(int i = 0; i < count; i++){
@@ -79,7 +87,25 @@ int main()
     char* D = (char*) malloc(size * sizeof(char));
     char* answer = (char*) malloc(size * sizeof(char));
     int count = 1;
-
+    
+    
+    int arr[10] = {0};
+    
+    qanda[10];
+    int a = rand() %10;
+ 
+    while (1){
+        
+     if(arr[a])
+           {
+        a = rand () %10;
+    }
+    else {
+        arr[a] = 1;
+        
+        break;
+    }
+    }
     count = readQuestion("c.txt", question, difficulty, A, B, C, D, answer, count);
     printQuestion(question, difficulty, A, B, C, D, answer);
 
