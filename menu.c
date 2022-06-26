@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "crypting.h"
 
 void instructions(){
     FILE *f = fopen("instruction.txt","r");
@@ -12,6 +13,7 @@ void instructions(){
 
 int main()
 {
+    decrypt("questions.txt");
     while(1){
         int ans;
         instructions();
@@ -44,5 +46,6 @@ int main()
             system("cls");
         }
     }
+    encrypt("questions.txt");
     return 0;
 }
